@@ -24,6 +24,7 @@ struct ContentView: View {
     var body: some View {
         NavigationStack{
             ZStack{
+                Color.clear
                 Image("magazine-front-cover")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
@@ -64,6 +65,12 @@ struct ContentView: View {
             .onAppear(perform: {
                 isAnimating = true
             })
+            .overlay(
+                InfoPanelView(scale: imageScale, offset: imageOffset)
+                    .padding(.horizontal)
+                    .padding(.top,30),
+                alignment: .top
+            )
         }
         
     }
