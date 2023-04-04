@@ -23,7 +23,7 @@ This project demonstrates gestures within the SwiftUI framework by implementing 
   * Component life cycles to implement entering and exiting animations of child components(***onAppear***).
   * ***Overlays*** for overlapping views.
   * ***DragGesture***, ***TapGesture***, ***LongTapGesture*** and ***MagnificationGesture** to perform respective tasks on the image.
-  * Various animations (*** spring, easeout*** ...).
+  * Various animations (***spring, easeout*** ...).
   * ***@State*** property wrapper to achive UI update and animations.
 
 
